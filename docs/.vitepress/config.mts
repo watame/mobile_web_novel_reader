@@ -4,8 +4,8 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   // GitHubPagesにデプロイする際に base の指定が必須
   // https://vitepress.dev/reference/site-config#base
-  base: '/vite_press_demo/',
-  title: "仕様書めっちゃデモ",
+  base: '/mobile_web_novel_reader/',
+  title: "Web小説サイトリーダー for iOS",
   description: "A VitePress Site",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
