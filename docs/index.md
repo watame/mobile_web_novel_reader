@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: ""Web小説サイトリーダー for iOS"
+  name: "Web小説サイトリーダー for iOS"
   text: "A VitePress Site"
   tagline: My great project tagline
   actions:
