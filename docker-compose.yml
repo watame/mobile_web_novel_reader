@@ -1,0 +1,11 @@
+services:
+  docs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 5173:5173
+      - 4173:4173
+    volumes:
+      - ./docs:/app/docs
+    command: npm run docs:dev
