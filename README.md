@@ -21,7 +21,7 @@ npm run docs:dev
 正常に起動したら↓のようなログが表示されます。
 ```
 vitepress v1.0.0-rc.31
-➜  Local:   http://localhost:5173/vite_press_demo/
+➜  Local:   http://localhost:5173/mobile_web_novel_reader/
 ```
 
 
@@ -35,13 +35,13 @@ docker-compose up
 ```
 vite_press_demo-docs-1  |   vitepress v1.0.0-rc.31
 vite_press_demo-docs-1  |
-vite_press_demo-docs-1  |   ➜  Local:   http://localhost:5173/vite_press_demo/
-vite_press_demo-docs-1  |   ➜  Network: http://172.20.0.2:5173/vite_press_demo/
+vite_press_demo-docs-1  |   ➜  Local:   http://localhost:5173/mobile_web_novel_reader/
+vite_press_demo-docs-1  |   ➜  Network: http://172.20.0.2:5173/mobile_web_novel_reader/
 ```
 
 ## 確認画面のアクセス先
 下記URLにアクセスしてみてください👇 結構キレイなサイトが表示されます😄
-- http://localhost:5173/vite_press_demo/
+- http://localhost:5173/mobile_web_novel_reader/
 ![image](https://github.com/watame/vite_press_demo/assets/16306537/2cd2c2fc-0149-46b1-8f65-b1146d3122c9)
 
 
