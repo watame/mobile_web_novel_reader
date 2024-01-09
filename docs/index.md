@@ -13,6 +13,9 @@ hero:
     - theme: alt
       text: メンバー
       link: /team-page
+    - theme: alt
+      text: ルール
+      link: /rule-page
 
 features:
   - title: Feature A
