@@ -16,6 +16,9 @@ hero:
     - theme: alt
       text: ルール
       link: /rule-page
+    - theme: alt
+      text: ワイヤフレーム
+      link: /wireframe
 
 features:
   - title: Feature A
