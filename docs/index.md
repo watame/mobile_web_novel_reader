@@ -16,6 +16,9 @@ hero:
     - theme: alt
       text: ルール
       link: /rule-page
+    - theme: alt
+      text: DB仕様書
+      link: /erd
 
 features:
   - title: Feature A
