@@ -19,6 +19,9 @@ hero:
     - theme: alt
       text: ワイヤフレーム
       link: /wireframe
+    - theme: alt
+      text: DB仕様書
+      link: /erd
 
 features:
   - title: Feature A
