@@ -10,16 +10,16 @@ prev: false
 
 ```mermaid
 erDiagram
-     Read {
+     ReadHistory {
         id INT
         ncode VARCHAR(255)
         read_episode INT
     }
 ```
 
-# Table定義
-| 物理名 | 論理名 | PK/FK | NULL | データ型 | 備考|
-| --- | --- | --- | --- | --- | --- |
-| id | ID | PK | FALSE | INT | 
-| ncode | 小説コード | | FALSE | VARCHAR(255) |
-| read_episode | 既読した話数 | | | INT |
+## Table定義
+| 物理名 | 論理名 | PK/FK | NULL | データ型 |デフォルト| 備考|
+| --- | --- | --- | --- | --- | --- | --- |
+| id | ID | PK | FALSE | INT | ||
+| ncode | 小説コード | | FALSE | VARCHAR(255) |||
+| read_episode | 既読した話数 | | FALSE | INT | 0 ||
