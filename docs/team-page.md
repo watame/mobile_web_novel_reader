@@ -38,11 +38,11 @@ const backMembers = [
     ]
   },
   {
-    avatar: 'https://github.com/kansenn.png',
-    name: 'kansenn',
+    avatar: 'https://github.com/araikansen.png',
+    name: 'araikansen',
     title: 'Developer',
     links: [
-      { icon: 'github', link: 'https://github.com/kansenn' },
+      { icon: 'github', link: 'https://github.com/araikansen' },
     ]
   },
   {

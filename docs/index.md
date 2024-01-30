@@ -16,6 +16,9 @@ hero:
     - theme: alt
       text: ルール
       link: /rule-page
+    - theme: alt
+      text: api
+      link: /BackEnd/getmaintext.md
 
 features:
   - title: Feature A
