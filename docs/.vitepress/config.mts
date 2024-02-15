@@ -11,23 +11,38 @@ export default withMermaid(
     description: "A VitePress Site",
     themeConfig: {
       // https://vitepress.dev/reference/default-theme-config
+      search: {
+        provider: "local",
+      },
       nav: [
         { text: 'Home', link: '/' },
-        { text: 'Examples', link: '/markdown-examples' }
+        {
+          text: "Repository",
+          items: [
+            {
+              text: "Frontend",
+              link: "https://github.com/takuron1996/MobileNovelReader",
+            },
+            {
+              text: "Backend",
+              link: "https://github.com/furutahidehiko/mobile_reader_novel_back",
+            },
+          ],
+        }
       ],
 
       sidebar: [
         {
-          text: 'Examples',
+          text: 'ドキュメント一覧',
           items: [
-            { text: 'Markdown Examples', link: '/markdown-examples' },
-            { text: 'Runtime API Examples', link: '/api-examples' }
+            { text: '画面仕様書', link: '/display' },
+            { text: 'DB仕様書', link: '/erd' }
           ]
         }
       ],
 
       socialLinks: [
-        { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+        { icon: 'github', link: 'https://github.com/watame/mobile_web_novel_reader' }
       ]
     }
   })
