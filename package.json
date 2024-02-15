@@ -2,11 +2,15 @@
   "devDependencies": {
     "mermaid": "^10.7.0",
     "vitepress": "^1.0.0-rc.31",
-    "vitepress-plugin-mermaid": "^2.0.16"
+    "vitepress-plugin-mermaid": "^2.0.16",
+    "@documate/documate": "^0.2.1"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs --host 0.0.0.0",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "@documate/vue": "^0.3.1"
   }
 }
