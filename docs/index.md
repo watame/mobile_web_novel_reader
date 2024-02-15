@@ -17,8 +17,8 @@ hero:
       text: ルール
       link: /rule-page
     - theme: alt
-      text: ワイヤフレーム
-      link: /wireframe
+      text: 画面仕様書
+      link: /display
     - theme: alt
       text: DB仕様書
       link: /erd
