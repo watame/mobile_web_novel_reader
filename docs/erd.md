@@ -18,7 +18,7 @@ erDiagram
     Follow {
         id INT
         read_history_id INT
-        follow BOOLEAN
+        is_favorite BOOLEAN
     }
     ReadHistory ||--o{ Follow : "has"
 
@@ -37,4 +37,4 @@ erDiagram
 | --- | --- | --- | --- | --- | --- | --- |
 | id | ID | PK | FALSE | INT | ||
 | read_history_id | 既読テーブル_ID | FK | FALSE | INT | ||
-| follow | お気に入り | | FALSE | Boolean |False||
+| is_favorite | お気に入り | | FALSE | BOOLEAN |False||
