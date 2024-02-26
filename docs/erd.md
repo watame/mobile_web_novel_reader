@@ -10,31 +10,42 @@ prev: false
 
 ```mermaid
 erDiagram
+    Book {
+        id INT "ID"
+        ncode VARCHAR(255) "小説コード"
+    }
     ReadHistory {
-        id INT
-        ncode VARCHAR(255)
-        read_episode INT
+        id INT "ID"
+        book_id INT "小説テーブル_ID"
+        read_episode INT "既読した話数"
     }
     Follow {
-        id INT
-        read_history_id INT
-        is_follow BOOLEAN
+        id INT "ID"
+        book_id INT "小説テーブル_ID"
+        is_follow BOOLEAN "お気に入り"
     }
-    ReadHistory ||--o{ Follow : "has"
-
+    Book ||--o{ ReadHistory : "has"
+    Book ||--o{ Follow : "has"
 ```
 
 ## Table定義
-### ReadHistory(既読テーブル)
+### Book(小説テーブル)
 | 物理名 | 論理名 | PK/FK | NULL | データ型 |デフォルト| 備考|
 | --- | --- | --- | --- | --- | --- | --- |
 | id | ID | PK | FALSE | INT | ||
 | ncode | 小説コード | | FALSE | VARCHAR(255) |||
+
+
+### ReadHistory(既読テーブル)
+| 物理名 | 論理名 | PK/FK | NULL | データ型 |デフォルト| 備考|
+| --- | --- | --- | --- | --- | --- | --- |
+| id | ID | PK | FALSE | INT | ||
+| book_id | 小説テーブル_ID | FK | FALSE | INT | ||
 | read_episode | 既読した話数 | | FALSE | INT | 0 ||
 
 ### Follow(お気に入りテーブル)
 | 物理名 | 論理名 | PK/FK | NULL | データ型 |デフォルト| 備考|
 | --- | --- | --- | --- | --- | --- | --- |
 | id | ID | PK | FALSE | INT | ||
-| read_history_id | 既読テーブル_ID | FK | FALSE | INT | ||
+| book_id | 小説テーブル_ID | FK | FALSE | INT | ||
 | is_follow | お気に入り | | FALSE | BOOLEAN |False||
