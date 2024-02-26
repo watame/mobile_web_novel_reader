@@ -22,7 +22,6 @@ erDiagram
     Follow {
         id INT "ID"
         book_id INT "小説テーブル_ID"
-        is_follow BOOLEAN "お気に入り"
     }
     Book ||--o{ ReadHistory : "has"
     Book ||--o{ Follow : "has"
@@ -48,4 +47,3 @@ erDiagram
 | --- | --- | --- | --- | --- | --- | --- |
 | id | ID | PK | FALSE | INT | ||
 | book_id | 小説テーブル_ID | FK | FALSE | INT | ||
-| is_follow | お気に入り | | FALSE | BOOLEAN |False||
