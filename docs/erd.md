@@ -39,8 +39,8 @@ erDiagram
 | 物理名 | 論理名 | PK/FK | NULL | データ型 |デフォルト| 備考|
 | --- | --- | --- | --- | --- | --- | --- |
 | id | ID | PK | FALSE | INT | ||
-| book_id | 小説テーブル_ID | FK | FALSE | INT | ||
-| read_episode | 既読した話数 | | FALSE | INT | 0 ||
+| book_id | 小説テーブル_ID | FK | FALSE | INT | ||複合ユニーク|
+| read_episode | 既読した話数 | | FALSE | INT | 0 |複合ユニーク|
 
 ### Follow(お気に入りテーブル)
 | 物理名 | 論理名 | PK/FK | NULL | データ型 |デフォルト| 備考|
